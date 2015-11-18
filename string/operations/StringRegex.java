@@ -1,11 +1,9 @@
 package edu.greenriver.it.string.operations;
 
 public class StringRegex
-{
-	
+{	
 	public static boolean isEmail(String subject)
-	{
-		
+	{	
 		return false;		
 	}
 	
