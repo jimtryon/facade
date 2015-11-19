@@ -6,8 +6,21 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
+/**
+ * The Class StringOperations.
+ * 
+ * @author jtryon
+ * @version 1.0
+ */
 public class StringOperations
 {	
+	
+	/**
+	 * Removes the duplicates from a string array.
+	 *
+	 * @param values the values
+	 * @return the string[]
+	 */
 	public static String[] removeDuplicates(String[] values)
 	{
 		Set<String> wordSet = new HashSet<String>();
@@ -16,6 +29,13 @@ public class StringOperations
 		return wordSet.toArray(new String[wordSet.size()]);
 	}
 
+	/**
+	 * Creates a new array from the given size
+	 *
+	 * @param values the values
+	 * @param newLength the new length
+	 * @return the string[]
+	 */
 	public static String[] resize(String[] values, int newLength)
 	{
 		// accepts a string array and an integer, creates a new array with the
@@ -36,6 +56,13 @@ public class StringOperations
 		return stringArray;
 	}
 	
+	/**
+	 * Removes all instances of the given search value from the string array
+	 *
+	 * @param values the values
+	 * @param search the search
+	 * @return the string[]
+	 */
 	public static String[] filter(String[] values, String search)
 	{
 		// remove all instances of the given search value (ArrayList)
